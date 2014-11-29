@@ -3,6 +3,9 @@ Highlight keywords in a text.
 
 Keywords will be wrapped in `<span class="angular-highlight"></span>`. The classname can be changed with the  optional parameter `highlight-class`.
 
+## Demo ##
+[Click here to see the demo.](http://26medias.github.io/angular-highlight/ "Demo")
+
 ## Installation ##
 
 Load AngularJS and Angular-Highlight:
