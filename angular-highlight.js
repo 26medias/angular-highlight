@@ -13,14 +13,15 @@ angular.module('angular-highlight', []).directive('highlight', function() {
 			var i;
 			var l = keywords.length;
 			for (i=0;i<l;i++) {
-				keywords[i] = keywords[i].replace(new RegExp('^ | $','g'), '');
+				keywords[i] = '\\W'+keywords[i].replace(new RegExp('^ | $','g'), '')+'\\W';
 			}
 			return keywords;
 		}
 		
 		scope.$watch('keywords', function() {
 			//console.log("scope.keywords",scope.keywords);
-			if (!scope.keywords) {
+			if (!scope.keywords || scope.keywords == '') {
+				element.html(scope.highlight);
 				return false;
 			}
 			
