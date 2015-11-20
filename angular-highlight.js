@@ -13,7 +13,7 @@ angular.module('angular-highlight', []).directive('highlight', function() {
 			var i;
 			var l = keywords.length;
 			for (i=0;i<l;i++) {
-				keywords[i] = '\\W'+keywords[i].replace(new RegExp('^ | $','g'), '')+'\\W';
+				keywords[i] = '\\b'+keywords[i].replace(new RegExp('^ | $','g'), '')+'\\b';
 			}
 			return keywords;
 		}
