@@ -1,0 +1,24 @@
+{
+  "name": "angular-highlight-partial-words",
+  "description": "An angular directive for highlighting partial words.",
+  "appPath": "dist",
+  "main": ["angular-highlight.js" ],
+  "dependencies": {
+    "angular": "~1.3.0"
+  },
+  "homepage": "https://github.com/seeq12/angular-highlight",
+  "authors": [
+    "26medias <julien@twenty-six-medias.com>",
+    "elvis-macak <elvis@lnmpy.com>",
+    "moses-seeq <stefanie.moses@seeq.com>"
+  ],
+  "keywords": [
+    "highlight",
+    "text",
+    "angularjs",
+    "inplace",
+    "highlighting",
+    "directive"
+  ],
+  "license": "MIT"
+}

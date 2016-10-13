@@ -13,7 +13,7 @@ angular.module('angular-highlight', []).directive('highlight', function() {
 			var i;
 			var l = keywords.length;
 			for (i=0;i<l;i++) {
-				keywords[i] = '\\b'+keywords[i].replace(new RegExp('^ | $','g'), '')+'\\b';
+				keywords[i] = keywords[i].replace(new RegExp('^ | $','g'), '');
 			}
 			return keywords;
 		}
@@ -29,7 +29,7 @@ angular.module('angular-highlight', []).directive('highlight', function() {
 			var tokenized	= tokenize(scope.keywords);
 			var regex 		= new RegExp(tokenized.join('|'), 'gmi');
 			
-			console.log("regex",regex);
+			//console.log("regex",regex);
 			
 			// Find the words
 			var html = scope.highlight.replace(regex, replacer);
